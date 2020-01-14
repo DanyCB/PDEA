@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="600.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorPacienteMensajes">
+   <top>
+      <AnchorPane prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="campoPaciente" styleClass="mainLabel" stylesheets="@application.css" text="Bienvenido SERGIO," AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" />
+            <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="519.0" layoutY="-7.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../modelo/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="15.0" prefWidth="572.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Paciente" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="311.0" prefWidth="119.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutY="6.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../modelo/mensajes.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="50.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mensajes" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0" />
+            <JFXButton fx:id="btnVolver" buttonType="RAISED" layoutX="10.0" layoutY="240.0" onAction="#pressBtnVolver" prefHeight="100.0" prefWidth="100.0" styleClass="btn" stylesheets="@application.css" text="Volver" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#81f1c1" />
+                        <Stop color="#5d5d52" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill></JFXButton>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="335.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.5" layoutX="8.0" layoutY="27.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="388.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <JFXTabPane styleClass="jfx-tab-pane" stylesheets="@application.css">
+                     <tabs>
+                        <Tab fx:id="tabRecibidos" closable="false" text="Recibidos">
+                           <content>
+                              <ScrollPane fitToWidth="true">
+                                 <content>
+                                    <AnchorPane fx:id="anchorPaneRecibidos">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recibidos:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Accordion fx:id="AccordionMensajesRec" minHeight="60.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="60.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tabEnviados" closable="false" text="Enviados">
+                           <content>
+                              <ScrollPane fitToWidth="true">
+                                 <content>
+                                    <AnchorPane fx:id="anchorPaneEnviados">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enviados:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Accordion fx:id="AccordionMensajesEnv" minHeight="60.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="60.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+                <AnchorPane fx:id="anchorPaneEnviados" maxHeight="200.0" minHeight="100.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TextArea fx:id="campoEscritura" layoutX="5.0" layoutY="46.0" prefHeight="99.0" prefWidth="313.0" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="161.0" AnchorPane.topAnchor="60.0" />
+                        <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Redactar:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="3.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <JFXButton fx:id="btnEnviar" buttonType="RAISED" layoutX="380.0" layoutY="22.0" onAction="#pressBtnEnviar" prefHeight="100.0" prefWidth="100.0" styleClass="btn" stylesheets="@application.css" text="Enviar" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                           <ripplerFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#81f1c1" />
+                                    <Stop color="#5d5d52" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill></JFXButton>
+                        <Label styleClass="textoEjercicio" stylesheets="@application.css" text=" Asunto: " AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="30.0" />
+                        <JFXTextField fx:id="campoAsunto" prefHeight="25.0" prefWidth="159.0" unFocusColor="#008f82" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="25.0">
+                           <focusColor>
+                              <LinearGradient endX="0.06190476190476191" endY="0.12857142857142853" startX="0.8571428571428572" startY="0.9761904761904762">
+                                 <stops>
+                                    <Stop color="#81ebbb" />
+                                    <Stop color="#5c5c53" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </focusColor>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

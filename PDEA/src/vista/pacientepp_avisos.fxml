@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="550.0" prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorAvisosPaciente">
+   <children>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <ImageView fitHeight="64.0" fitWidth="66.0" layoutX="462.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="12.0">
+         <image>
+            <Image url="@../modelo/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="93.0" layoutY="100.0" text="Avisos" AnchorPane.leftAnchor="93.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="campoEjercicios" layoutX="163.0" layoutY="322.0" prefHeight="29.0" prefWidth="270.0" text="..." AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="117.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="215.0" prefHeight="26.0" prefWidth="253.0" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="134.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="58.0" layoutX="27.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="82.0">
+         <image>
+            <Image url="@../modelo/avisos.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="32.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Próxima cita:" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="396.017578125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ejercicios:" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="408.671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnVolver" buttonType="RAISED" layoutX="199.0" layoutY="425.0" onAction="#pressBtnVolver" prefHeight="48.0" prefWidth="153.0" styleClass="btn" stylesheets="@application.css" text="Volver">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#415e36" />
+                  <Stop color="#5d5d52" offset="0.8193979933110369" />
+                  <Stop color="#5d5d52" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label fx:id="campoPaciente" layoutX="27.0" layoutY="29.0" text="Hola Sergio," AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="29.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="466.0" text="Paciente" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="21.0" layoutY="58.0" prefWidth="200.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="58.0" />
+=======
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+      <AnchorPane minHeight="500.0" minWidth="550.0" prefHeight="500.0" prefWidth="550.0" styleClass="background" stylesheets="@application.css">
+         <children>
+            <Label fx:id="campoPaciente" layoutX="27.0" layoutY="29.0" text="Hola Sergio,">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="26.0" layoutY="50.0" prefHeight="18.0" prefWidth="189.0" />
+            <Label layoutX="478.0" layoutY="466.0" text="Paciente">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ImageView fitHeight="64.0" fitWidth="66.0" layoutX="462.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../modelo/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="93.0" layoutY="100.0" text="Avisos">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="campoEjercicios" layoutX="163.0" layoutY="322.0" prefHeight="29.0" prefWidth="225.0" text="...">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="215.0" prefHeight="26.0" prefWidth="225.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="58.0" layoutX="27.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../modelo/avisos.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="32.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Próxima cita:">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text layoutX="56.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ejercicios:">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <JFXButton fx:id="btnVolver" buttonType="RAISED" layoutX="203.0" layoutY="432.0" onAction="#pressBtnVolver" prefHeight="34.0" prefWidth="138.0" styleClass="btn" stylesheets="@application.css" text="Volver">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#415e36" />
+                        <Stop color="#5d5d52" offset="0.8193979933110369" />
+                        <Stop color="#5d5d52" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill></JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+=======
+>>>>>>> parent of 65d6e40... update_avisos
+   </children>
+</VBox>

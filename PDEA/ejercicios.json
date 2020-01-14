@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nombre": "Marcha en el sitio",
+    "duracion": 30,
+    "gif": "modelo/Basic-March-in-Place.gif"
+  },
+  {
+    "id": 2,
+    "nombre": "Paso tocado ",
+    "duracion": 20, 
+    "gif": "modelo/Basic-Step-Touch.gif"
+  },
+  {
+    "id": 3,
+    "nombre": "Jumping Jacks",
+    "duracion": 15,
+    "gif": "modelo/Jumping-Jacks.gif"
+  }
+  ,
+  {
+    "id": 4,
+    "nombre": "Rizo de isquiotibiles",
+    "duracion": 30,
+    "gif": "modelo/Alternating-Hamstring-Curls.gif"
+  },
+  {
+    "id": 5,
+    "nombre": "Paso invertido",
+    "duracion": 20,
+    "gif": "modelo/Reverse-Disco-Step.gif"
+  },
+  {
+    "id": 6,
+    "nombre": "Extension de pierna sentado",
+    "duracion": 30,
+    "gif": "modelo/Seated-Leg-Extensions.gif"
+  },
+  {
+    "id": 7,
+    "nombre": "Pasos laterales",
+    "duracion": 20,
+    "gif": "modelo/Step-Touch-with-Double-Punches.gif"
+  },
+  {
+    "id": 8,
+    "nombre": "Sentadilla con silla",
+    "duracion": 15,
+    "gif": "modelo/Single-Leg-Squats-with-Chair.gif"
+  },
+  {
+    "id": 9,
+    "nombre": "Step Ups",
+    "duracion": 20,
+    "gif": "modelo/Step-Ups.gif"
+  }
+]

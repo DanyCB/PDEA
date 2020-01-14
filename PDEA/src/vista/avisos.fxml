@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane fx:id="AnchorPaneAvisos" prefHeight="200.0" prefWidth="500.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorAvisos">
+   <children>
+      <ImageView fx:id="LogoEWBAvisos" fitHeight="60.0" fitWidth="59.0" layoutX="437.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../modelo/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="LabelTituloAvisos" layoutX="14.0" layoutY="14.0" styleClass="mainLabel" stylesheets="@application.css" text="PDEA informa:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="30.0" />
+      <Label fx:id="LabelMensajeError" layoutX="236.0" layoutY="119.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXButton fx:id="ButtonVolver" layoutX="431.0" layoutY="161.0" onAction="#pressBtnVolver" styleClass="btn" stylesheets="@application.css" text="Volver" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="19.0">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#81f1c1" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+   </children>
+</AnchorPane>

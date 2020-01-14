@@ -1,0 +1,34 @@
+[
+  {
+    "dni": "60314786T",
+    "nombre": "Sofia",
+    "apellidos": "Martinez Parada",
+    "telefono": 698149747,
+    "contrasena": "0cc175b9c0f1b6a831c399e269772661",
+    "pacientes":["39042568E","07522677K","66151022D"]
+  },
+  {
+    "dni": "31612316N",
+    "nombre": "Marta",
+    "apellidos": "Lopez Perez",
+    "telefono": 692847294,
+    "contrasena": "0cc175b9c0f1b6a831c399e269772661",
+    "pacientes":["39042568E","60186612M","23733239E"]
+  },
+  {
+    "dni": "76359752M",
+    "nombre": "Angel",
+    "apellidos": "Zas Rodriguez",
+    "telefono": 693859285,
+    "contrasena": "0cc175b9c0f1b6a831c399e269772661",
+    "pacientes":["07447768T","38542880D"]
+  },
+  {
+    "dni": "53222466Y",
+    "nombre": "Andres",
+    "apellidos": "Montes Martinez",
+    "telefono": 674920493,
+    "contrasena": "0cc175b9c0f1b6a831c399e269772661",
+    "pacientes":["07813720E","80777450R"]
+  }
+]

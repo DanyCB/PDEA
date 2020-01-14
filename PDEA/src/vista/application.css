@@ -1,0 +1,74 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.background{
+	-fx-background-image: url('/modelo/background.jpg');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size:cover;
+}
+.mainLabel{
+	-fx-text-fill: grey;
+	-fx-font: 150% sans-serif;
+}
+
+.normalLabel{
+	-fx-text-fill: black;
+	-fx-font: 100% sans-serif;
+}
+
+.smallLabel{
+		-fx-font: 100% sans-serif;
+		-fx-text-fill: grey;
+}
+
+.btn{
+	-fx-background-color: #008f82;
+ 	-fx-text-fill: #ffffff;
+ 	-fx-font-weight: bold;
+	-fx-background-radius: 10px;
+}
+.btnComenzar{
+	-fx-background-color: #008f82;
+ 	-fx-text-fill: #ffffff;
+ 	-fx-font-weight: bold;
+	-fx-background-radius: 20px;
+	-fx-font:160% sans-serif;
+}
+.fondoEj{
+	-fx-background-color: #ffffff;
+ 
+}
+.btnCronometro{
+	-fx-background-color: #008f82;
+ 	-fx-text-fill: #ffffff;
+ 	-fx-font-weight: bold;
+	-fx-background-radius: 20px;
+	-fx-font:160% sans-serif;
+}
+
+.btnPaciente{
+	-fx-background-color: #008f82;
+ 	-fx-text-fill: #ffffff;
+ 	-fx-font:200% sans-serif;
+ 	-fx-font-weight: bold;
+	-fx-background-radius: 20px;
+	
+}
+
+.textoCronometro{
+	-fx-text-fill: #ffffff;
+ 	-fx-font-weight: bold;
+ 	-fx-font: 200% sans-serif;
+}
+
+.textoEjercicio{
+ 	-fx-text-fill: #ffffff;
+ 	-fx-font: 150% sans-serif;
+ 	-fx-background-color: #008f82;
+ 	-fx-background-radius: 10px;
+}
+.jfx-tab-pane .headers-region{
+    -fx-background-color: #008f82;
+}
+.jfx-tab-pane .tab-header-background { 
+	-fx-background-color:  #008f82;
+}

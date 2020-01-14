@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorGrande" prefHeight="600.0" prefWidth="620.0" styleClass="fondoEj" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorEjercicios">
+   <children>
+      <ImageView fitHeight="59.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../modelo/exercise.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nombrePaciente" styleClass="mainLabel" stylesheets="@application.css" text="..." AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator prefHeight="7.0" prefWidth="138.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0" />
+      <Label styleClass="smallLabel" stylesheets="@application.css" text="Paciente" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../modelo/logo.png" />
+         </image>
+      </ImageView>
+      <Label text="Ejercicios" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="75.0" />
+      <GridPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="125.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="314.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="150.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="700.0" minHeight="10.0" prefHeight="424.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnVolver" buttonType="RAISED" onAction="#pressBtnVolver" prefHeight="27.0" prefWidth="125.0" styleClass="btn" stylesheets="@application.css" text="Volver" GridPane.rowIndex="2">
+               <ripplerFill>
+                  <RadialGradient centerX="0.4887640449438202" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#81f1c1" />
+                        <Stop color="#5d5d52" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Group nodeOrientation="LEFT_TO_RIGHT" GridPane.columnIndex="1">
+               <children>
+                  <AnchorPane layoutY="16.0" prefHeight="94.0" prefWidth="313.0">
+                     <children>
+                        <JFXButton fx:id="btnSiguiente" buttonType="RAISED" contentDisplay="CENTER" layoutX="240.0" layoutY="47.0" onAction="#pressBtnSiguiente" styleClass="btn" stylesheets="@application.css" text="Siguiente" textAlignment="CENTER">
+                           <ripplerFill>
+                              <RadialGradient centerX="0.4887640449438202" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#81f1c1" />
+                                    <Stop color="#5d5d52" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAnterior" buttonType="RAISED" contentDisplay="CENTER" layoutX="7.0" layoutY="47.0" onAction="#pressBtnAnterior" styleClass="btn" stylesheets="@application.css" text="Anterior" textAlignment="CENTER">
+                           <ripplerFill>
+                              <RadialGradient centerX="0.4887640449438202" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#81f1c1" />
+                                    <Stop color="#5d5d52" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill>
+                        </JFXButton>
+                        <Label fx:id="txtEjercicio" contentDisplay="CENTER" layoutX="64.0" pickOnBounds="false" prefHeight="22.0" prefWidth="138.0" styleClass="textoEjercicio" stylesheets="@application.css" text="  EJERCICIO   " textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                        <Label fx:id="numeroEjercicio" contentDisplay="CENTER" layoutX="180.0" prefHeight="22.0" prefWidth="68.0" styleClass="textoEjercicio" stylesheets="@application.css" text="1 DE 3 " textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </children>
+            </Group>
+            <Group GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="pantallaEj" fitHeight="462.0" fitWidth="311.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../modelo/Reverse-Disco-Step.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Group>
+            <Group GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <JFXButton fx:id="btnComenzar" buttonType="RAISED" graphicTextGap="9.0" layoutX="-6.0" layoutY="-28.0" onAction="#pressBtnComenzar" styleClass="btnComenzar" stylesheets="@application.css" text="Comenzar" textOverrun="CLIP">
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#81f1c1" />
+                              <Stop color="#81f1c1" offset="0.007434944237918215" />
+                              <Stop color="#5d5d52" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                     <opaqueInsets>
+                        <Insets bottom="90.0" />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <Circle centerX="50.0" fill="#008f82" layoutY="90.0" opacity="0.99" radius="65.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" styleClass="btnCronometro">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                     <cursor>
+                        <Cursor fx:constant="MOVE" />
+                     </cursor>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Circle>
+                  <Label fx:id="cronometro" alignment="CENTER" contentDisplay="CENTER" layoutX="-11.0" layoutY="72.0" pickOnBounds="false" prefHeight="36.0" prefWidth="123.0" styleClass="textoCronometro" stylesheets="@application.css" text="..." textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" right="5.0" />
+               </GridPane.margin>
+            </Group>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
